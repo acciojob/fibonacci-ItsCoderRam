@@ -1,10 +1,11 @@
 function fibonacci(num) {
 // your code here
-	 let a = 0;
+	nction fibonacci(num) {
+    let a = 0;
     let b = 1;
 
     if (num == 0) {
-        return 0;
+        return "Invalid Input! Fibonacci sequence starts from 1st term.";
     }
     if (num == 1) {
         return a;
@@ -18,4 +19,5 @@ function fibonacci(num) {
         b = c;
     }
     return a;
+}
 module.exports = fibonacci;
