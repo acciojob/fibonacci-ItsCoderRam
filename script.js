@@ -1,19 +1,21 @@
 function fibonacci(num) {
 // your code here
-	let a = 0;
-  let b = 1;
+	 let a = 0;
+    let b = 1;
 
-  if (num == 0) {
+    if (num == 0) {
+        return 0;
+    }
+    if (num == 1) {
+        return a;
+    }
+    if (num == 2) {
+        return b;
+    }
+    for (let i = 3; i <= num; i++) {
+        let c = a + b;
+        a = b;
+        b = c;
+    }
     return a;
-  }
- if (num == 1) {
-    return 1;
-  }
-  for (let i = 2; i <= num; i++) {
-    let c = a + b;
-    a = b;
-    b = c;
-  }
-  return b;
-}
 module.exports = fibonacci;
